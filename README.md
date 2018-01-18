@@ -1,87 +1,25 @@
-# Project Title
+# Bamazon 
 
-One Paragraph of project description goes here
+## Description #
 
-## Getting Started
+This application was created during Week 12 of the Georgia Tech Coding Bootcamp. The goal was to create an Amazon-like store front using Node.js and MySQL.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+# _The Interface_ #
 
-### Prerequisites
+The interface allows the user to view the current inventory of store items: item IDs, product name, and price. The user is then able to purchase one of the existing items by entering the item ID and the desired quantity. If the selected quantity is currently in stock, the user's order is fulfilled, displaying the total purchase price and updating the store database. If the desired quantity is not available, the user is prompted to modify their order.
 
-What things you need to install the software and how to install them
+# _BamazonCustomer.js_ #
 
-```
-Give examples
-```
+By running bamazonCustomer.js, the user will be able to view the current inventory of items.
 
-### Installing
+![First Image](https://github.com/rahimpradhan/bamazon/blob/master/images/bamazon1.PNG)
 
-A step by step series of examples that tell you have to get a development env running
+The user will be prompted for the item ID and the quantity. If the item is in stock, an invoice will be presented and the database will be updated.
 
-Say what the step will be
 
-```
-Give the example
-```
+![Second Image](https://github.com/rahimpradhan/bamazon/blob/master/images/bamazon2.PNG)
 
-And repeat
 
-```
-until finished
-```
+If the item is not in stock, a message will be provided and the user will be prompted again.
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+![Third Image](https://github.com/rahimpradhan/bamazon/blob/master/images/bamazon3.PNG)
