@@ -1,16 +1,15 @@
 # Bamazon 
 
-## Description #
+This app was for the Georgia Tech Coding Bootcamp.  There are three JS files that provide different interactions with
+the bamazon online store. 
 
-This application was created during Week 12 of the Georgia Tech Coding Bootcamp. The goal was to create an Amazon-like store front using Node.js and MySQL.
+_Bamazon.js_ 
 
-# _The Interface_ #
-
-The interface allows the user to view the current inventory of store items: item IDs, product name, and price. The user is then able to purchase one of the existing items by entering the item ID and the desired quantity. If the selected quantity is currently in stock, the user's order is fulfilled, displaying the total purchase price and updating the store database. If the desired quantity is not available, the user is prompted to modify their order.
-
-# _BamazonCustomer.js_ #
-
-By running bamazonCustomer.js, the user will be able to view the current inventory of items.
+Bamazon.js is a simple store app that allows a customer to 
+view items available to purchase and make purchases.  Each item has an itemID, name, department, price, stockquantity.
+When a purchase is made the stockquantity is reduced in the database and the store information the user sees is updated.
+A customer will generate prompts if they try and buy more stock than is available or purchase an item not in stock 
+to keep the customer able to buy more things.  
 
 ![First Image](https://github.com/rahimpradhan/bamazon/blob/master/images/bamazon1.PNG)
 
@@ -19,7 +18,14 @@ The user will be prompted for the item ID and the quantity. If the item is in st
 
 ![Second Image](https://github.com/rahimpradhan/bamazon/blob/master/images/bamazon2.PNG)
 
+_BamazonManager.js_
 
-If the item is not in stock, a message will be provided and the user will be prompted again.
+Running bamazonManager.js allows user to view inventory with less than 5 items, view all inventory, add a new item to the store for sale, and add more stock to existing products. 
 
-![Third Image](https://github.com/rahimpradhan/bamazon/blob/master/images/bamazon3.PNG)
+
+_BamazonSupervisor.js_
+
+Running bamazonSupervisor.js will populate a table showing additional information that only a supervisor can see and allowing 
+additional permissions. The supervisor view shows departmentID, department name, overhead cost of each department, 
+total product sales of each department, and profits calculated as sales minus overhead. Supervisor can also create new departments.  
+
